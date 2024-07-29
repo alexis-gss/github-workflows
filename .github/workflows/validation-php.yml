@@ -1,0 +1,37 @@
+name: Github actions validation php
+
+on:
+  workflow_call:
+
+jobs:
+  Phpcs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: PHP version
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.3"
+      - name: Validate composer.json and composer.lock
+        run: composer validate
+      - name: Setup composer
+        uses: php-actions/composer@v6
+      - name: Phpcs validation
+        run: php vendor/bin/phpcs
+
+  Phpstan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: PHP version
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.3"
+      - name: Validate composer.json and composer.lock
+        run: composer validate
+      - name: Setup composer
+        uses: php-actions/composer@v6
+      - name: Phpstan validation
+        run: php vendor/bin/phpstan analyse
