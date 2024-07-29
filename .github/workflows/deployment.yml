@@ -1,0 +1,28 @@
+name: Github actions deployment
+
+on:
+  workflow_call:
+    secrets:
+      OVH_SSH_PASSWORD:
+        required: true
+      OVH_SSH_USERNAME:
+        required: true
+      OVH_SSH_HOST:
+        required: true
+      OVH_SSH_PORT:
+        required: true
+      OVH_WEBSITE_DOCUMENTROOT:
+        required: true
+
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install prerequisites
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl jq sshpass openssh-client
+      - name: Pull over SSH
+        run: sshpass -p ${{ secrets.OVH_SSH_PASSWORD }} ssh -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null -oLogLevel=quiet ${{ secrets.OVH_SSH_USERNAME }}@${{ secrets.OVH_SSH_HOST }} -p ${{ secrets.OVH_SSH_PORT }} -- 'cd ${{ secrets.OVH_WEBSITE_DOCUMENTROOT }} && git reset --hard origin/master'
