@@ -1,0 +1,19 @@
+name: Github actions validation sass
+
+on:
+  workflow_call:
+
+jobs:
+  Stylelint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: NPM depedencies
+        run: npm i
+      - name: Stylelint validation
+        run: npm run stylelint
