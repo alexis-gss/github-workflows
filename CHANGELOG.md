@@ -6,6 +6,8 @@ All notable changes to `github-workflows` will be documented in this file.
 - This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html),
 - Commits respect [Conventionnal commits](https://www.conventionalcommits.org/en/v1.0.0/) & use [Gitmoji](https://gitmoji.dev/).
 
-## **[v1.0.0] - 29.07.24**
+## **[v1.0.0] - 04.29.24**
 
--   Working project
+### Added
+-   feat: 🎉 working workflows
+-   docs: 📝 synchronization of the Github Workflows GitBook content
