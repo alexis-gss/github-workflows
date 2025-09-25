@@ -28,7 +28,6 @@
 # Frameworks, Platforms and Libraries
 
 [![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)](https://docs.github.com/en/actions)
-[![Gitbook](https://img.shields.io/badge/GitBook-7B36ED?style=for-the-badge&logo=gitbook&logoColor=white)](https://www.gitbook.com/)
 
 # Documentation
 
@@ -52,7 +51,7 @@ When implementing a feature please create an issue first explaining your idea an
 
 # Changelog
 
-Latest version v1.0.0.
+Latest version [v1.0.1](https://github.com/alexis-gss/github-workflows/releases/tag/v1.0.1).
 
 See the [CHANGELOG.md](CHANGELOG.md) file for details.
 
