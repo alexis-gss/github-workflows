@@ -6,9 +6,17 @@ All notable changes to `github-workflows` will be documented in this file.
 - This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html),
 - Commits respect [Conventionnal commits](https://www.conventionalcommits.org/en/v1.0.0/) & use [Gitmoji](https://gitmoji.dev/).
 
-## **[v1.0.2] - 06.10.25**
+## **[v1.0.3] - 13.12.25**
 
 ### Changed
+-   chore: 💚 bump php version to v8.4 in workflows
+-   chore: 💚 update deployment workflow
+
+Full changelog: https://github.com/alexis-gss/github-workflows/compare/v1.0.2...v1.0.3
+
+## **[v1.0.2] - 06.10.25**
+
+### Fixed
 -   fix: 🐛 add git fetch -ap before reset to sync with remote master
 
 Full changelog: https://github.com/alexis-gss/github-workflows/compare/v1.0.1...v1.0.2
