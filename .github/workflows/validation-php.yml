@@ -12,7 +12,7 @@ jobs:
       - name: PHP version
         uses: shivammathur/setup-php@v2
         with:
-          php-version: "8.3"
+          php-version: "8.4"
       - name: Validate composer.json and composer.lock
         run: composer validate
       - name: Setup composer
@@ -28,7 +28,7 @@ jobs:
       - name: PHP version
         uses: shivammathur/setup-php@v2
         with:
-          php-version: "8.3"
+          php-version: "8.4"
       - name: Validate composer.json and composer.lock
         run: composer validate
       - name: Setup composer
