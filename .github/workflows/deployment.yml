@@ -9,9 +9,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Install prerequisites
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y curl jq sshpass openssh-client
-      - name: Pull over SSH
-        run: sshpass -p ${{ secrets.OVH_SSH_PASSWORD }} ssh -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null -oLogLevel=quiet ${{ secrets.OVH_SSH_USERNAME }}@${{ secrets.OVH_SSH_HOST }} -p ${{ secrets.OVH_SSH_PORT }} -- 'cd ${{ github.event.repository.name }} && git fetch -ap && git reset --hard origin/master'
+      - name: Deploy
+        uses: appleboy/ssh-action@v0.1.8
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PRIVATE_KEY }}
+          port: ${{ secrets.PORT }}
+          script: ${{ secrets.SCRIPT }}
