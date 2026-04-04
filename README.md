@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Banner of the github account](./assets/images/github-visual.png)](https://docs-github-workflows.alexis-gousseau.com)
+[![Banner of the github account](./assets/images/github-visual.png)](https://doc-github-workflows.alexis-gousseau.com)
 
 [![GitHub latest commit](https://img.shields.io/github/last-commit/alexis-gss/github-workflows/develop?color=FFFFFF&style=for-the-badge)](https://github.com/alexis-gss/github-workflows/commit/master)
 [![GitHub tag](https://img.shields.io/github/tag/alexis-gss/github-workflows?style=for-the-badge&color=FFFFFF)](https://github.com/alexis-gss/github-workflows/tags)
@@ -10,7 +10,7 @@
 
 # Introduction
 
-[Github Workflows](https://docs-github-workflows.alexis-gousseau.com) is a repository dedicated to github workflows. I've pooled all the github actions I use in a single project, so that I can maintain them more easily without having to update each repository individually.
+[Github Workflows](https://doc-github-workflows.alexis-gousseau.com) is a repository dedicated to github workflows. I've pooled all the github actions I use in a single project, so that I can maintain them more easily without having to update each repository individually.
 
 # Table of contents
 
@@ -31,7 +31,7 @@
 
 # Documentation
 
-You can find all the documentation of this project on this link : [Github Workflows documentation](https://docs-github-workflows.alexis-gousseau.com).
+You can find all the documentation of this project on this link : [Github Workflows documentation](https://doc-github-workflows.alexis-gousseau.com).
 
 # Contributing
 
@@ -51,12 +51,12 @@ When implementing a feature please create an issue first explaining your idea an
 
 # Changelog
 
-Latest version [v1.0.3](https://github.com/alexis-gss/github-workflows/releases/tag/v1.0.3).
+Latest version [v1.1.0](https://github.com/alexis-gss/github-workflows/releases/tag/v1.1.0).
 
 See the [CHANGELOG.md](CHANGELOG.md) file for details.
 
 # Copyright and License
 
-[Github Workflow](https://docs-github-workflows.alexis-gousseau.com) was written by [Alexis Gousseau](https://github.com/alexis-gss).
+[Github Workflows](https://doc-github-workflows.alexis-gousseau.com) was written by [Alexis Gousseau](https://github.com/alexis-gss).
 
 Copyright (c) 2024 and beyond Alexis Gousseau.
