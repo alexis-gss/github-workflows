@@ -1,0 +1,24 @@
+{
+  "name": "alexis-gss/github-workflows",
+  "version": "1.0.0",
+  "description": "Mutualisation of Github actions used in many of my projects. ",
+  "homepage": "https://alexis-gousseau.com/github-workflows",
+  "authors": [
+    {
+      "name": "Alexis Gousseau",
+      "homepage": "https://alexis-gousseau.com",
+      "role": "Developer"
+    }
+  ],
+  "keywords": [
+    "alexis-gss",
+    "github",
+    "workflows"
+  ],
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@alexis-gss/husky-config": "^1.0.2"
+  }
+}
