@@ -6,6 +6,13 @@ All notable changes to `github-workflows` will be documented in this file.
 - This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html),
 - Commits respect [Conventionnal commits](https://www.conventionalcommits.org/en/v1.0.0/) & use [Gitmoji](https://gitmoji.dev/).
 
+## **[v1.1.2] - 11.04.26**
+
+### Fixed
+-   fix: 🐛 upgrade gitHub actions to node 24 compatible versions
+
+Full changelog: https://github.com/alexis-gss/github-workflows/compare/v1.1.1...v1.1.2
+
 ## **[v1.1.1] - 09.04.26**
 
 ### Changed
