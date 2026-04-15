@@ -6,6 +6,13 @@ All notable changes to `github-workflows` will be documented in this file.
 - This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html),
 - Commits respect [Conventionnal commits](https://www.conventionalcommits.org/en/v1.0.0/) & use [Gitmoji](https://gitmoji.dev/).
 
+## **[v2.0.0] - 15.04.26**
+
+### Fixed
+-   fix: 🚚 rename actions of npm linters
+
+Full changelog: https://github.com/alexis-gss/github-workflows/compare/v1.1.2...v2.0.0
+
 ## **[v1.1.2] - 11.04.26**
 
 ### Fixed

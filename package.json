@@ -1,6 +1,6 @@
 {
   "name": "alexis-gss/github-workflows",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "description": "Mutualisation of Github actions used in many of my projects. ",
   "homepage": "https://alexis-gousseau.com/github-workflows",
   "authors": [
