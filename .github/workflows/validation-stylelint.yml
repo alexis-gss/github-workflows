@@ -1,4 +1,4 @@
-name: Github actions validation sass
+name: Github actions validation stylelint
 
 on:
   workflow_call:

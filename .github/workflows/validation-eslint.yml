@@ -1,4 +1,4 @@
-name: Github actions validation typescript
+name: Github actions validation eslint
 
 on:
   workflow_call:
