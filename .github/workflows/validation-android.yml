@@ -1,0 +1,43 @@
+name: Github actions validation android
+
+on:
+  workflow_call:
+
+jobs:
+  Android:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up JDK
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Validate Gradle Wrapper
+        uses: gradle/actions/wrapper-validation@v6
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v6
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Build Debug
+        run: ./gradlew assembleDebug
+
+      - name: Run Unit Tests
+        run: ./gradlew test
+
+      - name: Run Lint
+        run: ./gradlew lint
+
+      - name: Upload Lint Report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: lint-report
+          path: app/build/reports/lint-results-*.html
