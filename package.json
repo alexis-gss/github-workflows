@@ -19,6 +19,6 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@alexis-gss/husky-config": "^1.0.2"
+    "@alexis-gss/husky-config": "^1.1.0"
   }
 }
