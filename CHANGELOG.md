@@ -6,6 +6,16 @@ All notable changes to `github-workflows` will be documented in this file.
 - This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html),
 - Commits respect [Conventionnal commits](https://www.conventionalcommits.org/en/v1.0.0/) & use [Gitmoji](https://gitmoji.dev/).
 
+## **[v2.1.0] - 06.08.26**
+
+### Added
+-   feat: ✨ set github actions for android project
+
+### Changed
+-   chore: ⬆️ bump @alexis-gss/husky-config to v1.1.0
+
+Full changelog: https://github.com/alexis-gss/github-workflows/compare/v2.0.0...v2.1.0
+
 ## **[v2.0.0] - 15.04.26**
 
 ### Fixed
