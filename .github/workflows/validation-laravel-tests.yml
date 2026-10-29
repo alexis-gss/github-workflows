@@ -3,6 +3,9 @@ name: Github actions validation laravel tests
 on:
   workflow_call:
 
+env:
+  PHP_VERSION: "8.5"
+
 jobs:
   Tests:
     runs-on: ubuntu-latest
@@ -17,12 +20,20 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: "8.4"
+          php-version: ${{ env.PHP_VERSION }}
           extensions: pdo_sqlite, sqlite3
+          coverage: none
           tools: composer
 
       - name: Validate composer.json and composer.lock
         run: composer validate
+
+      - name: Cache Composer
+        uses: actions/cache@v5
+        with:
+          path: ~/.cache/composer/files
+          key: composer-${{ env.PHP_VERSION }}-${{ hashFiles('composer.lock') }}
+          restore-keys: composer-${{ env.PHP_VERSION }}-
 
       - name: Install dependencies
         run: composer install --no-interaction --prefer-dist --optimize-autoloader
@@ -42,8 +53,7 @@ jobs:
         run: |
           mkdir -p database
           touch database/database.sqlite
-          mkdir -p build/coverage
           php artisan migrate --force
 
-      - name: Run tests
-        run: php artisan test
+      - name: Run Pest tests
+        run: php vendor/bin/pest --ci --coverage --min=85
