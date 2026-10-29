@@ -51,7 +51,7 @@ When implementing a feature please create an issue first explaining your idea an
 
 # Changelog
 
-Latest version [v2.1.0](https://github.com/alexis-gss/github-workflows/releases/tag/v2.1.0).
+Latest version [v2.2.0](https://github.com/alexis-gss/github-workflows/releases/tag/v2.2.0).
 
 See the [CHANGELOG.md](CHANGELOG.md) file for details.
 

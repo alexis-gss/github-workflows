@@ -6,6 +6,14 @@ All notable changes to `github-workflows` will be documented in this file.
 - This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html),
 - Commits respect [Conventionnal commits](https://www.conventionalcommits.org/en/v1.0.0/) & use [Gitmoji](https://gitmoji.dev/).
 
+## **[v2.2.0] - 30.10.26**
+
+### Added
+-   feat: ✨ add pint test in php validations with composer cache
+-   feat: ✨ use pest in php tests with composer cache
+
+Full changelog: https://github.com/alexis-gss/github-workflows/compare/v2.1.0...v2.2.0
+
 ## **[v2.1.0] - 06.08.26**
 
 ### Added
